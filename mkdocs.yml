@@ -9,8 +9,7 @@ watch:
   - xboto
 
 nav:
-  - Getting Started: index.md
-  - Resources: resources.md
+  - index.md
 
 theme:
   name: material

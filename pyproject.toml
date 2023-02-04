@@ -44,12 +44,15 @@ mkdocs-git-revision-date-plugin = "^0.3.2"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.custom.xpublish]
+extra-module-docs = ['xsentinels', 'xinject']
+
 [[tool.poetry.source]]
 url = "https://pypi.fury.io/xyngular"
 name = "gemfury"
 
 [tool.pyright]
-include = "xyn_aws"
+include = "xboto"
 
 [tool.black]
 line-length = 99

@@ -1,35 +1,37 @@
-from xyn_aws.proxy import aws_clients, aws_resources, Boto3Resources, Boto3Clients, BotoSession
-from xyn_aws.clients import ssm
-from xyn_aws.resources import dynamodb
+from xboto.dependencies import (
+    boto_clients, boto_resources, BotoResources, BotoClients, BotoSession
+)
+from xboto.client import ssm
+from xboto.resource import dynamodb
 import moto
-from xyn_aws.proxy import boto_session
+from xboto.dependencies import boto_session
 
 
 def test_client_property():
-    a = aws_clients.ssm
-    b = aws_clients.ssm
+    a = boto_clients.ssm
+    b = boto_clients.ssm
     assert a == b
 
 
 def test_client_attr():
-    a = aws_clients.s3
-    b = aws_clients.s3
+    a = boto_clients.s3
+    b = boto_clients.s3
     assert a == b
 
 
 def test_resource_attr():
-    a = aws_resources.ec2
-    b = aws_resources.ec2
+    a = boto_resources.ec2
+    b = boto_resources.ec2
     assert a == b
     # Try a third-lookup
-    assert a == aws_resources.ec2
+    assert a == boto_resources.ec2
 
 
 def test_internal_cache_per_instance():
     # Ensure the two types don't insert things into each others
     # internal list of cached lazy boto clients/resources
-    r = Boto3Resources()
-    c = Boto3Clients()
+    r = BotoResources()
+    c = BotoClients()
     assert c.dynamodb is not r.dynamodb
 
     c_dynamodb = c.dynamodb
@@ -98,11 +100,11 @@ def test_change_boto_kwargs_on_existing():
         'region_name': 'us-west-5'
     }
 
-    Boto3Resources.DynamoDB.resource().boto_kwargs = set_with_boto_kwargs
+    BotoResources.DynamoDB.grab().boto_kwargs = set_with_boto_kwargs
 
     assert dynamodb.meta.client.meta.endpoint_url == "https://dynamodb.us-west-5.amazonaws.com"
 
-    current_boto_kwargs = Boto3Resources.DynamoDB.resource().boto_kwargs
+    current_boto_kwargs = BotoResources.DynamoDB.grab().boto_kwargs
 
     # Make sure they equal but are NOT the same exact dict (should be a copy)
     assert current_boto_kwargs == set_with_boto_kwargs

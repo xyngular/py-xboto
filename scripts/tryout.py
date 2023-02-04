@@ -1,1 +1,2 @@
-print("hello")
+from xboto import client
+print(f"d")
