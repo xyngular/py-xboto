@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/xyngular/py-xboto/compare/v1.0.0...v1.0.1) (2023-02-04)
+
+
+### Bug Fixes
+
+* docs/readme link. ([c98e50e](https://github.com/xyngular/py-xboto/commit/c98e50ea150e0993f2c282add10480c20aba32ce))
+
 ## 1.0.0 (2023-02-04)
 
 
