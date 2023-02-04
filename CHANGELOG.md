@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/xyngular/py-xboto/compare/v1.0.1...v1.0.2) (2023-02-04)
+
+
+### Bug Fixes
+
+* pypi metadata homepage link ([c653e10](https://github.com/xyngular/py-xboto/commit/c653e102fc84a94255fa5d4811ee6b44c3dc76c6))
+
 ## [1.0.1](https://github.com/xyngular/py-xboto/compare/v1.0.0...v1.0.1) (2023-02-04)
 
 
