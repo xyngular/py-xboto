@@ -6,7 +6,7 @@ authors = ["Josh Orr <josh@orr.blue>"]
 packages = [{include = "xboto"}]
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/xyngular/py-xbool"
+repository = "https://github.com/xyngular/py-xboto"
 keywords = ["boto", "boto client", "boto resource", "inject", "lazy", "dependency", "dependency injection", "aws"]
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules"
