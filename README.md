@@ -1,8 +1,19 @@
-## Xyngular AWS Library
+![PythonSupport](https://img.shields.io/static/v1?label=python&message=%203.8|%203.9|%203.10|%203.11&color=blue?style=flat-square&logo=python)
+![PyPI version](https://badge.fury.io/py/xboto.svg?)
 
-Latest documentation can be reached at [<http://devdocs.xyngular.net/py-xyn-aws/latest/index.html>](<http://devdocs.xyngular.net/py-xyn-aws/latest/index.html>)
+## Documentation
 
-AWS utilities to help working aws services and with boto3.
+**[📄 Detailed Documentation](https://xyngular.github.io/py-xboto/latest/)** | **[🐍 PyPi](https://pypi.org/project/xboto/)**
+
+## Install
+
+```bash
+# via pip
+pip install xboto
+
+# via poetry
+poetry add xboto
+```
 
 ## Quick Start
 
