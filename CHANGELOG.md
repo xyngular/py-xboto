@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/xyngular/py-xboto/compare/v1.0.2...v1.1.0) (2023-04-15)
+
+
+### Features
+
+* fix license ([b816432](https://github.com/xyngular/py-xboto/commit/b816432b61094f1dd79546ded75c69a38d93cb1b))
+
+
+### Bug Fixes
+
+* API Gateway Spelling. ([70c0ec3](https://github.com/xyngular/py-xboto/commit/70c0ec3dbc51885449664a7aa5c29f51b7054fa4))
+* deps ([5fac7c9](https://github.com/xyngular/py-xboto/commit/5fac7c93beb098c0188f564b5ee15a7cfade7ce9))
+
 ## [1.0.2](https://github.com/xyngular/py-xboto/compare/v1.0.1...v1.0.2) (2023-02-04)
 
 
