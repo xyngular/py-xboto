@@ -109,3 +109,9 @@ def test_change_boto_kwargs_on_existing():
     # Make sure they equal but are NOT the same exact dict (should be a copy)
     assert current_boto_kwargs == set_with_boto_kwargs
     assert current_boto_kwargs is not set_with_boto_kwargs
+
+
+def test_get_lambda_client():
+    from xboto import BotoClients
+    BotoClients.grab().load('lambda_')
+
