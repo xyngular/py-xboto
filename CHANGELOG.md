@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/xyngular/py-xboto/compare/v1.1.0...v1.1.1) (2023-07-03)
+
+
+### Bug Fixes
+
+* support the alternate lambda client name (due to python keyword conflict). ([80551da](https://github.com/xyngular/py-xboto/commit/80551da55835bb3d8540a3e6c0769c0c5b35983d))
+
 ## [1.1.0](https://github.com/xyngular/py-xboto/compare/v1.0.2...v1.1.0) (2023-04-15)
 
 
