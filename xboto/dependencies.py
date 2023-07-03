@@ -273,6 +273,10 @@ class _BaseBotoClientOrResource(Dependency):
         boto_name = boto_name.replace("_", "-")
         boto_name = boto_name.lower()
 
+        if boto_name.endswith("-"):
+            # Remove ending underscore (ie: for the `lambda_` name).
+            boto_name = boto_name[:-1]
+
         if dep_cls := _dependency_classes[boto_kind].get(boto_name):
             return dep_cls
 
